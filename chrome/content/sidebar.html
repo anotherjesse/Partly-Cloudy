@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Partly Cloudy</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <link href="vendor/files.css" rel="stylesheet" type="text/css" media="screen" />
+    <script src="S3Ajax.js" type="text/javascript"></script>
+    <script type="text/javascript" src="chrome://browser/content/utilityOverlay.js"></script>
+  </head>
+  <body bgcolor="#fff">
+    <div id="view" style="display:none">
+      <select id="buckets" onchange="list(this.options[this.selectedIndex].value)"><option></option></select>
+      <div id="files"></div>
+    </div>
+    <div id="setup" style="display:none">
+      <h2>Amazon S3 Setup</h2>
+      <p>(grab them <a href="javascript:aws_setup();">here</a>)</p>
+      <div>
+        <label for="s3-key">AWS Access Key</label>
+        <input type="text" id="s3-key" />
+      </div>
+      <div>
+        <label for="s3-secret-key">S3 Secret Key</label>
+        <input type="password" id="s3-secret-key" />
+      </div>
+      <div>
+        <label>&nbsp;</label>
+        <input type="button" id="saveButton" value="Save" onclick="save()" />
+      </div>
+    </div>
+    <script src="sidebar.js" type="text/javascript"></script>
+  </body>
+</html>
+

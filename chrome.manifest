@@ -1,0 +1,6 @@
+content	partly chrome/content/
+skin	partly classic/1.0	chrome/skin/
+
+overlay chrome://browser/content/browser.xul    chrome://partly/content/overlay.xul
+
+resource partly modules/
